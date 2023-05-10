@@ -16,7 +16,7 @@
         .container {
             height: 100vh;
             width: 100%;
-            background-image: url(/media/img/image.png);
+            background-image: url('./media/img/image.png');
             background-size: cover;
             background-position: relative;
 
@@ -96,7 +96,7 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <img src="/media/img/logo.png" alt="company-logo" class="logo">
+            <img src="./media/img/logo.png" alt="company-logo" class="logo">
             <ul>
                 <li> <a href="#">HOME</a></li>
                 <li> <a href="#">ABOUT</a></li>
@@ -110,7 +110,7 @@
             </div>
             <div class="right-col">
                 <p>Click here to play</p>
-                <img src="/media/img/play.png" alt="play-pause-btn" id="play-btn">
+                <img src="./media/img/play.png" alt="play-pause-btn" id="play-btn">
 
             </div>
         </div>
@@ -118,14 +118,14 @@
     </div>
     <script>
         var playIcon = document.querySelector("#play-btn");
-        var audio = new Audio("/media/music/Tum_Hi_Ho.mp3");
+        var audio = new Audio("./media/music/Tum_Hi_Ho.mp3");
         function playMusic() {
             if (audio.paused) {
-                playIcon.src = "/media/img/pause.png";
+                playIcon.src = "./media/img/pause.png";
                 audio.play();
             }
             else {
-                playIcon.src = "/media/img/play.png";
+                playIcon.src = "./media/img/play.png";
                 audio.pause();
             }
 
